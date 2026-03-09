@@ -44,9 +44,9 @@ export function AuthModal({ isOpen, onClose, initialView = "login" }: AuthModalP
                             variant="ghost"
                             size="sm"
                             onClick={onClose}
-                            className="absolute right-4 top-4 h-8 w-8 rounded-full p-0"
+                            className="absolute right-4 top-4 h-12 w-12 rounded-full p-0"
                         >
-                            <X className="h-4 w-4" />
+                            <X className="h-8 w-8" />
                         </Button>
 
                         <AnimatePresence mode="wait">

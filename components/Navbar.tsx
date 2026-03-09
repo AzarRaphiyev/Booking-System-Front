@@ -54,12 +54,12 @@ export function Navbar() {
                     {/* Desktop Actions */}
                     <div className="hidden md:flex items-center gap-4">
                         <ThemeToggle />
-                        <Button variant="ghost" size="sm" className="w-9 h-9 p-0 rounded-full" onClick={() => openAuth("login")}>
+                        <Button variant="ghost" className="w-13 h-13 bg-primary-600 cursor-pointer rounded-full" onClick={() => openAuth("login")}>
                             <User className="h-5 w-5" />
                             <span className="sr-only">Profil</span>
                         </Button>
                         <div className="flex items-center gap-2 border-l border-zinc-200 pl-4 dark:border-zinc-800">
-                            <Button variant="ghost" size="sm" onClick={() => openAuth("login")}>
+                            <Button variant="ghost" size="sm" className="bg-primary-600 text-black cursor-pointer dark:text-white" onClick={() => openAuth("login")}>
                                 Giriş
                             </Button>
                             <Button size="sm" onClick={() => openAuth("register")}>
@@ -77,7 +77,7 @@ export function Navbar() {
                             className="w-9 h-9 p-0"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         >
-                            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                            {isMobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
                         </Button>
                     </div>
                 </div>

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { ReservationData } from "./types";
-import { Calendar, Clock, CreditCard, Scissors, UserCircle } from "lucide-react";
+import { Calendar, Clock, Scissors, UserCircle } from "lucide-react";
 import { Button } from "../ui/Button";
 
 interface Step4ConfirmProps {

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ReservationData, Service, Professional } from "./types";
+import { ReservationData } from "./types";
 import { Step1Service } from "./Step1Service";
 import { Step2Professional } from "./Step2Professional";
 import { Step3DateTime } from "./Step3DateTime";
@@ -31,7 +31,7 @@ export function ReservationWizard() {
     const nextStep = () => setCurrentStep((prev) => Math.min(prev + 1, 4));
     const prevStep = () => setCurrentStep((prev) => Math.max(prev - 1, 1));
 
-    const updateReservation = (key: keyof ReservationData, value: any) => {
+    const updateReservation = <K extends keyof ReservationData>(key: K, value: ReservationData[K]) => {
         setReservation((prev) => ({ ...prev, [key]: value }));
     };
 

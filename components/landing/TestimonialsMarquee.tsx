@@ -41,7 +41,7 @@ export function TestimonialsMarquee() {
                                         <Star key={i} className="w-5 h-5 fill-current" />
                                     ))}
                                 </div>
-                                <p className="text-foreground/80 leading-relaxed mb-6 italic">"{t.text}"</p>
+                                <p className="text-foreground/80 leading-relaxed mb-6 italic">&quot;{t.text}&quot;</p>
                                 <div className="flex flex-col">
                                     <h4 className="font-bold text-foreground">{t.name}</h4>
                                     <span className="text-sm text-primary-600 dark:text-primary-500">{t.role}</span>
